@@ -1,0 +1,287 @@
+/* Reset styles */
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+/* Navigation bar styles */
+.navigation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  max-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6f6af7;
+  padding: 0.5%;
+}
+
+/* Logo */
+.logo-container {
+  color: white;
+  font-family: "Delius Unicase", cursive;
+  font-size: 1rem;
+}
+
+/* Navigation Options */
+.options-container {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.options-container ul {
+  display: flex;
+}
+
+.options-container li {
+  margin-right: 40px;
+  list-style-type: none;
+}
+
+.options-container select {
+  position: absolute;
+  right: 20px;
+  color: white;
+  border: none;
+  background-color: #6f6af7;
+}
+
+/* Search Container */
+.search-bar-container {
+  width: 18%;
+  position: relative;
+  border: none;
+}
+
+/* Search Input */
+.search-bar-container input[type="text"] {
+  width: 100%;
+  height: 25px; /* Adjust as needed */
+  padding-left: 2px;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+/* Placeholder Text */
+.input-box::placeholder {
+  font-size: 0.9rem;
+  padding: 7px;
+  margin: 5px;
+}
+
+/* Search Icon */
+.search-bar-container i.fa-search {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust as needed */
+  transform: translateY(-50%);
+  color: gray; /* Icon color */
+  padding-left: 20px;
+}
+
+/* Icon */
+.menu-icon-container {
+  margin-right: 40px;
+}
+
+/* Hamburger Icon */
+.menu-icon-container i.fas.fa-bars {
+  color: white; /* Set the color to white */
+}
+
+/* Navigation Links */
+.navigation-container a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Main content container */
+.content-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  margin: 120px auto;
+}
+.frame-icon-container {
+  position: sticky;
+  float: right;
+  margin-top: 50px;
+  top: 100px;
+}
+
+.frame-icon-container img {
+  height: 150px;
+}
+
+/* Box 1 styles */
+.box-1 {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  height: 350px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.box-1 img {
+  height: 350px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-container textarea {
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  background-color: #e5d8ff;
+  resize: vertical;
+}
+
+/* Box 2 styles */
+.box-2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  width: 80%;
+}
+
+.box-2 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 100px;
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 4px 7px 32px 0 rgba(0, 0, 0, 0.1);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Box 2 Colors */
+.box-2-1 {
+  background-color: #929dff;
+}
+.box-2-2 {
+  background: #734cf2;
+}
+.box-2-3 {
+  background: #d288ff;
+}
+.box-2-4 {
+  background: #000000;
+}
+
+/* Box 3 styles */
+.box-3 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 400px;
+  background: #483eff;
+  border-radius: 20px;
+}
+
+/* Box 3-1 styles */
+.box-3-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box-3-tab > div {
+  text-align: center;
+  padding: 20px;
+  margin-left: 10px;
+  border-radius: 22px;
+  border: 2px solid white;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+/* Box 3-1 Colors */
+.box-3-1-1 {
+  background: #bce0f6;
+  box-shadow: 0px 6px 35px 0px #00000063;
+}
+
+/* Box 3-2 styles */
+.box-3-info {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  background-color: white;
+  padding: 20px;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Info Heading */
+.info-heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+/* Info Item */
+.info-item {
+  margin: 10px 30px;
+  padding: 5px;
+}
+
+.info-item strong {
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+/* Box 3-2 Button */
+.box-3-info button {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 100px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+/* Help Icon */
+.help-icon-container {
+  position: fixed;
+  bottom: 1px;
+  right: 12px;
+  z-index: 999;
+}
+
+.help-icon-container img {
+  width: 100px;
+  height: 100px;
+}
